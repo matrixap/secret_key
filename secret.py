@@ -11,8 +11,8 @@ class Secret(object):
     
   
   def get_chars(self):
-  
-  # Get ascii Characters numbers and punctuation (minus quote characters as they could terminate string).
+    
+    # Get ascii Characters numbers and punctuation (minus quote characters as they could terminate string).
     chars = ''.join([self.ascii, self.digits, self.p]).replace('\'', '').replace('"', '').replace('\\', '')
     
     return chars
